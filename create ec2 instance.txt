@@ -1,0 +1,12 @@
+provider "aws" {
+    region = "us-east-1"
+}
+resource "aws_instance" "my_instance" {
+    ami = 053b0d53c279acc90
+    instance type = "t3.micro"
+    count = 
+
+    tags = {
+        Name = "NewEC2Instance"
+    }
+}
